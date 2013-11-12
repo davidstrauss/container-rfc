@@ -10,7 +10,7 @@ Please fork, then issue a pull request. We will discuss in the PRs.
 
 ## Goals
 
-* __Portability__, Given a standard container , many runtimes can run it
+* __Portability__, Given a standard container, many runtimes can run it
 * __Simple__, should be already implemented or trivial to support in existing runtimes
 
 
@@ -23,7 +23,7 @@ For the purposes of this document, we are ignoring transport or packaging. The r
 
 ### Required Files
 
-These files do not need to have any contents, but should be provided either by the runtime or the contents of the file
+These files do not need to have any contents, but should be provided either by the runtime or the contents of the file.
 
 #### /etc/os-release
 
