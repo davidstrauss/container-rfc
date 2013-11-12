@@ -84,21 +84,22 @@ Once running, the runtime should provide a globally unique ID for the running co
 
 
 ## Support matrix
-|Runtime Support|Docker|[systemd+nspawn](http://www.freedesktop.org/software/systemd/man/systemd-nspawn.html)|native LXC|libvirt-lxc|lmctfy|OpenVZ
-|----|----|----|
-|/etc/resolv.conf|yes|yes|
-|/etc/os-release|no|yes|
-|/usr/sbin/init|no|yes|
-|EnvironmentFile|no|yes|
-|NAT networking|yes|no|
-|Private networking|yes|yes|
-|Host networking|no|yes|
-|Unique container id|yes|yes|
-|Network namespaces|yes|yes|
-|Filesystem namespaces|yes|yes|
-|Process namespaces|yes|yes|
-|User namespaces|no|no|
-|Cgroups|yes|yes|
+
+|Runtime Support|Docker|[systemd+nspawn](http://www.freedesktop.org/software/systemd/man/systemd-nspawn.html)|native LXC|libvirt-lxc|lmctfy|OpenVZ|
+|----|----|----|---|---|---|---|
+|/etc/resolv.conf|yes|yes|-|-|-|-|-|
+|/etc/os-release|no|yes|-|-|-|-|-|
+|/usr/sbin/init|no|yes|-|-|-|-|-|
+|EnvironmentFile|no|yes|-|-|-|-|-|
+|NAT networking|yes|no|-|-|-|-|-|
+|Private networking|yes|yes|-|-|-|-|-|
+|Host networking|no|yes|-|-|-|-|-|
+|Unique container id|yes|yes|-|-|-|-|-|
+|Network namespaces|yes|yes|-|-|-|-|-|
+|Filesystem namespaces|yes|yes|-|-|-|-|-|
+|Process namespaces|yes|yes|-|-|-|-|-|
+|User namespaces|no|no|-|-|-|-|-|
+|Cgroups|yes|yes|-|-|-|-|-|
 
 
 
