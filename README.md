@@ -4,7 +4,11 @@ Current status: _WIP draft_. Please contribute. Not complete at all.
 
 A vendor neutral format for Linux container images and runtime. This document specifies services the runtime needs to expose to the container, as well as the format the runtime expects to be able run the specified container image. 
 
-### Goals
+## How to Contribute
+
+Please fork, then issue a pull request. We will discuss in the PRs. 
+
+## Goals
 
 * __Portability__, Given a standard container , many runtimes can run it
 * __Simple__, should be already implemented or trivial to support in existing runtimes
