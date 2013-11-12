@@ -41,7 +41,7 @@ What is the smallest container we can make to test this?
 
 #### Entry point
 
-The runtime should provide a mechanism to enter the container through an arbitrary executable. If not specified, runtime should default to /usr/sbin/init. Otherwise fail. 
+The runtime should provide a mechanism to enter the container through an arbitrary executable. If not specified, runtime should default to /sbin/init. Otherwise fail. 
 
 ##### Environment Variables
 
