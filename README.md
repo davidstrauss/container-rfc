@@ -109,6 +109,7 @@ Once running, the runtime should provide a globally unique ID for the running co
 Some places of inspiration for this.
 
 * [systemd-nspawn](http://www.freedesktop.org/software/systemd/man/systemd-nspawn.html)
+* [systemd Container Interface](http://www.freedesktop.org/wiki/Software/systemd/ContainerInterface/)
 
 * docker inspect 
 
