@@ -101,7 +101,7 @@ Once running, the runtime should provide a globally unique ID for the running co
 |Process namespaces   |yes|yes|-  |yes|no |-  |
 |User namespaces      |no |no |-  |yes|no |-  |
 |Cgroups              |yes|yes|-  |yes|yes|-  |
-|MAC-based security   |yes|no |-  |yes|no |-  |
+|MAC-based security   |yes|yes|-  |yes|no |-  |
 
 
 ## References
