@@ -1,27 +1,14 @@
-Standard Container RFC
+Container Support Matrix
 --
 Current status: _WIP draft_. Please contribute. Not complete at all. 
 
-A vendor neutral format for Linux container images and runtime. This document specifies services the runtime needs to expose to the container, as well as the format the runtime expects to be able run the specified container image. 
+Describes various features for running containers and the support in the various container runtimes. Incomplete, please contribute as appropriate. 
 
 ## How to Contribute
 
 Please fork, then issue a pull request. We will discuss in the PRs. 
 
-## Goals
-
-* __Portability__, Given a standard container, many runtimes can run it
-* __Simple__, should be already implemented or trivial to support in existing runtimes
-
-
-## Image Format
-
-The basic format is a root filesystem containing all the dependencies needed to run an application. A basic chroot should be a sufficient test to see if your filesystem is setup correctly. 
-
-For the purposes of this document, we are ignoring transport or packaging. The runtime simply needs a root filesystem to start from. 
-
-
-### Required Files
+### Supported files Files
 
 These files do not need to have any contents, but should be provided either by the runtime or the contents of the file.
 
@@ -31,11 +18,7 @@ These files do not need to have any contents, but should be provided either by t
 
 #### /etc/resolv.conf
 
-If provided by the container, the runtime must respect it. If not provided, the runtime can inject or add it to the container. 
-
-#### Example RFC minimal container
-
-What is the smallest container we can make to test this?
+Location of dns servers and search domain. Sometimes manipulated by the runtime, but most of the time untouched. 
 
 ### Runtime Support
 
@@ -90,10 +73,10 @@ Once running, the runtime should provide a globally unique ID for the running co
 |/etc/resolv.conf     |yes|yes|yes|-  |no |-  |
 |/etc/os-release      |no |yes|no |-  |no |-  |
 |/usr/sbin/init       |no |yes|yes|yes|no |-  |
-|EnvironmentFile      |no |yes|yes|-  |no |-  |
+|EnvironmentFile      |yes|yes|yes|-  |no |-  |
 |NAT networking       |yes|no |yes|yes|yes|-  |
 |Private networking   |yes|yes|yes|yes|yes|-  |
-|Host networking      |no |yes|yes|yes|yes|-  |
+|Host networking      |yes|yes|yes|yes|yes|-  |
 |Socket activation    |no |yes|no |yes|no |no |
 |Unique container id  |yes|yes|no |yes|yes|-  |
 |Network namespaces   |yes|yes|yes|yes|yes|-  |
