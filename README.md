@@ -8,7 +8,7 @@ Describes various features for running containers and the support in the various
 
 Please fork, then issue a pull request. We will discuss in the PRs. 
 
-### Supported files Files
+### Supported Files
 
 These files do not need to have any contents, but should be provided either by the runtime or the contents of the file.
 
