@@ -68,23 +68,23 @@ Once running, the runtime should provide a globally unique ID for the running co
 
 ## Support matrix
 
-| Runtime Support | [Docker](https://github.com/dotcloud/docker) | [systemd+nspawn](http://www.freedesktop.org/software/systemd/man/systemd-nspawn.html) | [native LXC](http://linuxcontainers.org) | [libvirt-lxc](http://libvirt.org/drvlxc.html) | [lmctfy](https://github.com/google/lmctfy) | [OpenVZ](http://openvz.org) |
-|---------------------|---|---|---|---|---|---|
-|/etc/resolv.conf     |yes|yes|yes|-  |no |-  |
-|/etc/os-release      |no |yes|no |-  |no |-  |
-|/usr/sbin/init       |no |yes|yes|yes|no |-  |
-|EnvironmentFile      |yes|yes|yes|-  |no |-  |
-|NAT networking       |yes|no |yes|yes|yes|-  |
-|Private networking   |yes|yes|yes|yes|yes|-  |
-|Host networking      |yes|yes|yes|yes|yes|-  |
-|Socket activation    |no |yes|no |yes|no |no |
-|Unique container id  |yes|yes|no |yes|yes|-  |
-|Network namespaces   |yes|yes|yes|yes|yes|-  |
-|Filesystem namespaces|yes|yes|yes|yes|yes|-  |
-|Process namespaces   |yes|yes|yes|yes|yes|-  |
-|User namespaces      |no |no |yes|yes|yes|-  |
-|Cgroups              |yes|yes|yes|yes|yes|-  |
-|MAC-based security   |yes|yes|yes|yes|no |-  |
+| Runtime Support | [Docker](https://github.com/dotcloud/docker) | [systemd+nspawn](http://www.freedesktop.org/software/systemd/man/systemd-nspawn.html) | [native LXC](http://linuxcontainers.org) | [lmctfy](https://github.com/google/lmctfy) | [OpenVZ](http://openvz.org) |
+|---------------------|---|---|---|---|---|
+|/etc/resolv.conf     |yes|yes|yes|no |-  |
+|/etc/os-release      |no |yes|no |no |-  |
+|/usr/sbin/init       |no |yes|yes|no |-  |
+|EnvironmentFile      |yes|yes|yes|no |-  |
+|NAT networking       |yes|no |yes|yes|-  |
+|Private networking   |yes|yes|yes|yes|-  |
+|Host networking      |yes|yes|yes|yes|-  |
+|Socket activation    |no |yes|no |no |no |
+|Unique container id  |yes|yes|no |yes|-  |
+|Network namespaces   |yes|yes|yes|yes|-  |
+|Filesystem namespaces|yes|yes|yes|yes|-  |
+|Process namespaces   |yes|yes|yes|yes|-  |
+|User namespaces      |no |no |yes|yes|-  |
+|Cgroups              |yes|yes|yes|yes|-  |
+|MAC-based security   |yes|yes|yes|no |-  |
 
 
 ## References
